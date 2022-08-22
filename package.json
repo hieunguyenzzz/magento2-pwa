@@ -9,15 +9,6 @@
     "node": ">=14.18.3"
   },
   "scripts": {
-    "dev": "concurrently -k -n codegen,next \"yarn:graphql-codegen -c ../../scripts/codegen.magento-graphcms.yml -w\" \"yarn:next dev\"",
-    "codegen": "mesh build && graphql-codegen -c ../../scripts/codegen.magento-graphcms.yml",
-    "build": "mesh build && graphql-codegen -c ../../scripts/codegen.magento-graphcms.yml && next build && next-sitemap",
-    "start": "next start",
-    "tsc:lint": "tsc --noEmit -p .",
-    "lingui": "cross-env NEXT_PUBLIC_LOCALE_STORES='{\"en\": \"en\", \"nl\": \"nl\", \"fr\": \"fr\", \"nl\": \"nl\", \"de\": \"de\", \"es\": \"es\", \"it\": \"it\"}' NODE_ENV=development lingui extract --clean",
-    "postinstall": "cd ../.. && yarn postinstall"
-  },
-  "scripts_local": {
     "dev": "concurrently -k -n codegen,next 'graphql-codegen -w' 'next dev'",
     "codegen": "mesh build && graphql-codegen",
     "build": "mesh build && graphql-codegen && next build && next-sitemap",
@@ -55,7 +46,7 @@
     "@graphcommerce/magento-customer-order": "3.0.41",
     "@graphcommerce/magento-graphql": "3.1.6",
     "@graphcommerce/magento-newsletter": "2.0.45",
-    "@graphcommerce/magento-payment-braintree": "3.0.46",
+    "@graphcommerce/magento-payment-braintree": "^3.0.46",
     "@graphcommerce/magento-payment-included": "3.1.18",
     "@graphcommerce/magento-product": "4.4.25",
     "@graphcommerce/magento-product-bundle": "4.0.47",
@@ -68,7 +59,6 @@
     "@graphcommerce/magento-search": "4.1.35",
     "@graphcommerce/magento-store": "4.2.27",
     "@graphcommerce/magento-wishlist": "1.5.3",
-    "@graphcommerce/mollie-magento-payment": "3.4.12",
     "@graphcommerce/next-config": "3.2.0",
     "@graphcommerce/next-ui": "4.21.0",
     "@lingui/core": "3.14.0",

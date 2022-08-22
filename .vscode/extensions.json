@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "mquandalle.graphql",
+    "redhat.vscode-yaml",
+    "mikestead.dotenv",
+    "mrorz.language-gettext",
+    "sburg.vscode-javascript-booster"
+  ]
+}
