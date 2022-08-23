@@ -1,10 +1,11 @@
 import { ProductListDocument } from '@graphcommerce/magento-product'
 import { StoreConfigDocument } from '@graphcommerce/magento-store'
+import { Home } from '../components/home'
 import { DefaultPageDocument } from '../graphql/DefaultPage.gql'
 import { graphqlSharedClient, graphqlSsrClient } from '../lib/graphql/graphqlSsrClient'
-import CmsPage, { GetPageStaticProps } from './page/[url]'
+import { GetPageStaticProps } from './page/[url]'
 
-export default CmsPage
+export default Home
 
 export const getStaticProps: GetPageStaticProps = async ({ locale, params }) => {
   const client = graphqlSharedClient(locale)
