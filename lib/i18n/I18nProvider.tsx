@@ -1,7 +1,3 @@
-import { LinguiProvider, LinguiProviderProps } from '@graphcommerce/lingui-next'
-
-type I18nProviderProps = Pick<LinguiProviderProps, 'locale' | 'children'>
-
 /**
  * Reason for it to exist: We're loading the translations from a relative path, this a good thing.
  * This allows for easy overwriting of translations.
@@ -15,18 +11,32 @@ type I18nProviderProps = Pick<LinguiProviderProps, 'locale' | 'children'>
  *
  * Todo: When React Server Components is released, move this to a server component.
  */
-export function I18nProvider({ locale, children }: I18nProviderProps) {
+
+import { createContext, useMemo } from 'react'
+
+const translationContext = createContext({
+  locale: 'en',
+  translations: {},
+})
+export const Trans = ({ id }) => (
+  <translationContext.Consumer>
+    {({ translations }) => translations[id]}
+  </translationContext.Consumer>
+)
+export function I18nProvider({ locale, children }) {
   return (
-    <LinguiProvider
+    <translationContext.Provider
       key={locale}
-      locale={locale}
-      loader={(l) => import(`../../locales/${l}.po`)}
-      ssrLoader={(l) =>
-        // eslint-disable-next-line global-require, import/no-dynamic-require
-        typeof window === 'undefined' ? require(`../../locales/${l}.po`) : { messages: {} }
-      }
+      value={useMemo(
+        () => ({
+          locale,
+          // eslint-disable-next-line import/no-dynamic-require
+          translations: require(`../../localData/translations/${locale}.json`),
+        }),
+        [locale],
+      )}
     >
       {children}
-    </LinguiProvider>
+    </translationContext.Provider>
   )
 }

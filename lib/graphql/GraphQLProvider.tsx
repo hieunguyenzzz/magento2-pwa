@@ -4,13 +4,13 @@ import {
   ApolloClient,
   ApolloLink,
   ApolloProvider,
+  createCacheReviver,
+  errorLink,
+  fragments,
   HttpLink,
   InMemoryCache,
-  NormalizedCacheObject,
-  createCacheReviver,
-  fragments,
   mergeTypePolicies,
-  errorLink,
+  NormalizedCacheObject,
 } from '@graphcommerce/graphql'
 import { cartTypePolicies, migrateCart } from '@graphcommerce/magento-cart'
 import {

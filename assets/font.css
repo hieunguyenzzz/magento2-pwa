@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Calibri Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Calibri Light'), url('./fonts/calibril.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Calibri Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Calibri Regular'), url('./fonts/Calibre-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Verlag-Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Verlag-Black'), url('./fonts/Verlag Black.otf') format("opentype");
+}

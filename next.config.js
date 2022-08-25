@@ -16,8 +16,8 @@ const obs = new PerformanceObserver((entryList) => {
 })
 obs.observe({ entryTypes: ['measure'] })
 
-if (!process.env.GRAPHCMS_URL || !process.env.MAGENTO_ENDPOINT) {
-  throw Error('Please specify GRAPHCMS_URL and MAGENTO_ENDPOINT in your .env')
+if (!process.env.MAGENTO_ENDPOINT) {
+  throw Error(' MAGENTO_ENDPOINT in your .env')
 }
 
 if (

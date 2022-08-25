@@ -14,8 +14,8 @@ module.exports = {
         sale: '#dc9d2d',
       },
       fontFamily: {
-        body: ['var(--main-family)'],
-        heading: ['var(--heading-family)'],
+        body: ['var(--font-heading)'],
+        heading: ['var(--font-heading)'],
         button: ['var(--font-button)'],
       },
     },
@@ -53,6 +53,8 @@ module.exports = {
           success: '#186846',
           warning: '#D1A710',
           error: '#EA668A',
+
+          '--rounded-btn': '0',
         },
       },
     ],
