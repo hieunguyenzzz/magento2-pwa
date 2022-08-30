@@ -1,5 +1,5 @@
-import { NormalizedCacheObject, ApolloClient, ApolloLink, errorLink } from '@graphcommerce/graphql'
-import { MeshApolloLink, getBuiltMesh } from '@graphcommerce/graphql-mesh'
+import { ApolloClient, ApolloLink, errorLink, NormalizedCacheObject } from '@graphcommerce/graphql'
+import { getBuiltMesh, MeshApolloLink } from '@graphcommerce/graphql-mesh'
 import { createStoreLink, defaultLocale } from '@graphcommerce/magento-store'
 import type { MeshInstance } from '@graphql-mesh/runtime'
 import { createCache } from './GraphQLProvider'

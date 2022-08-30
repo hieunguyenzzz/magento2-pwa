@@ -144,7 +144,7 @@
             "type": "submenu",
             "settings": {
               "menu_heading": "t:CATEGORIES",
-              "menu_item": "categories",
+              "menu_item": "collections",
               "menu_items": ""
             }
           },
@@ -172,7 +172,7 @@
         ],
         "settings": {
           "logo": "\/shop_images\/LOGO-MOBELARIS_Final_1_copy.png",
-          "description": "Hand Made Style Designer Furniture from around the world come together at Mobelaris, bringing you a vast range of designer furniture, lighting and accessories at a fraction of the high street price.",
+          "description": "t:Hand Made Style Designer Furniture from around the world come together at Mobelaris, bringing you a vast range of designer furniture, lighting and accessories at a fraction of the high street price.",
           "footer_text_align": "left",
           "show_credit_cards": true,
           "payment_icon_color": true,
@@ -208,16 +208,16 @@
           "show_payment_button": false,
           "show_social_share": false,
           "product_description_position": "above",
-          "lower_description": "small",
+          "lower_description": "t:small",
           "lower_description_background": "#ffffff",
           "show_product_size_chart": false,
           "show_product_video": false,
           "show_product_model": false,
           "enable_product_reviews": true,
           "reviews_heading": "t:RECENSIONER",
-          "leading_time_description": "All items are dispatched within 2-5 working days. Some European dispatch times may be longer due to processing\/admin. Any quantity of items that are not in stock or clearly displayed as due into stock with a certain date will be manufactured to order, please allow 12 - 18 weeks for these.",
-          "outstock_leading_time_description": "Upon ordering your items will be handcrafted especially for you. This takes time and expertise so we allow 4 -5 weeks for manufacture, quality assurance and packaging. 4 weeks travel to the U.K., and then there’s customs clearance and admin. It’s worth the wait!",
-          "upsell_leading_time_description": "The dates given are approximate, given to us by our shippers. This does not take into account, customs clearance, decanting of containers, labeling, organisation, and distribution from our UK warehouse.",
+          "leading_time_description": "t:All items are dispatched within 2-5 working days. Some European dispatch times may be longer due to processing\/admin. Any quantity of items that are not in stock or clearly displayed as due into stock with a certain date will be manufactured to order, please allow 12 - 18 weeks for these.",
+          "outstock_leading_time_description": "t:Upon ordering your items will be handcrafted especially for you. This takes time and expertise so we allow 4 -5 weeks for manufacture, quality assurance and packaging. 4 weeks travel to the U.K., and then there’s customs clearance and admin. It’s worth the wait!",
+          "upsell_leading_time_description": "t:The dates given are approximate, given to us by our shippers. This does not take into account, customs clearance, decanting of containers, labeling, organisation, and distribution from our UK warehouse.",
           "caren_guide_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0648\/7883\/8019\/files\/care-instruction-guide-2020_1_1.pdf?v=1657189858",
           "caren_guide_text": "t:Care Instruction Guide"
         }
@@ -270,7 +270,7 @@
         "settings": {
           "logo": "",
           "logo_max_width": 150,
-          "newsletter_details": "<p>Coming Soon<\/p><p>Signup for our newsletter and get updated when we launch our site <a href=\"https:\/\/example.com\/\">see our newsletter policy.<\/a><\/p>",
+          "newsletter_details": "t:<p>Coming Soon<\/p><p>Signup for our newsletter and get updated when we launch our site <a href=\"https:\/\/example.com\/\">see our newsletter policy.<\/a><\/p>",
           "text_size": 18,
           "text_color": "#000000",
           "background_color": "#f5f5f5",
@@ -732,12 +732,12 @@
             "type": "accordion",
             "settings": {
               "ac_section_heading": "t:Using Accordion for FAQ's",
-              "ac_heading_1": "Question #1",
-              "ac_content_1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
-              "ac_heading_2": "Question #2",
-              "ac_content_2": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
-              "ac_heading_3": "Question #3",
-              "ac_content_3": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+              "ac_heading_1": "t:Question #1",
+              "ac_content_1": "t:<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+              "ac_heading_2": "t:Question #2",
+              "ac_content_2": "t:<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+              "ac_heading_3": "t:Question #3",
+              "ac_content_3": "t:<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
               "ac_heading_4": "",
               "ac_content_4": "",
               "ac_heading_5": "",
@@ -809,7 +809,7 @@
             "type": "block",
             "settings": {
               "image": "\/shop_images\/customer-reviews_1.png",
-              "content": "<p>TOPS FOR <strong>SUPPORT <\/strong><\/p><p>100's of Independant reviews<\/p>",
+              "content": "t:<p>TOPS FOR <strong>SUPPORT <\/strong><\/p><p>100's of Independant reviews<\/p>",
               "url": ""
             }
           },
@@ -817,7 +817,7 @@
             "type": "block",
             "settings": {
               "image": "\/shop_images\/2-Customer_Support_Designer_Editions.png",
-              "content": "<p>SUPPORT <strong>7 DAYS<\/strong> A WEEK<\/p><p>Live Chat<\/p>",
+              "content": "t:<p>SUPPORT <strong>7 DAYS<\/strong> A WEEK<\/p><p>Live Chat<\/p>",
               "url": ""
             }
           },
@@ -825,7 +825,7 @@
             "type": "block",
             "settings": {
               "image": "\/shop_images\/Designer-Editions-Warranty.png",
-              "content": "<p>30 DAY<strong> GUARANTEE<\/strong><\/p><p>No quibbles money back<\/p>",
+              "content": "t:<p>30 DAY<strong> GUARANTEE<\/strong><\/p><p>No quibbles money back<\/p>",
               "url": ""
             }
           },
@@ -833,7 +833,7 @@
             "type": "block",
             "settings": {
               "image": "\/shop_images\/4-Safe-shopping_8547d486-1066-4860-919f-f2932b2e7be7.png",
-              "content": "<p>PAYMENT<strong> <\/strong>100%<strong> SECURE<\/strong><\/p><p>Payment 100% Secure<\/p>",
+              "content": "t:<p>PAYMENT<strong> <\/strong>100%<strong> SECURE<\/strong><\/p><p>Payment 100% Secure<\/p>",
               "url": ""
             }
           }
@@ -1580,7 +1580,7 @@
         "settings": {
           "layout": "grid",
           "heading": "t:MOST SEARCHED",
-          "content": "<p>At Mobelaris we try to bring you all of the best style designer furniture from the UK including 1920's to inspired by modern pieces of today.<\/p>",
+          "content": "t:<p>At Mobelaris we try to bring you all of the best style designer furniture from the UK including 1920's to inspired by modern pieces of today.<\/p>",
           "collection": ""
         }
       },
@@ -1589,7 +1589,7 @@
         "settings": {
           "layout": "slider",
           "heading": "t:FAVORITE DINING CHAIRS",
-          "content": "<p>Style Mid Century Designer Dining from Oak to Fibreglass, Verner Panton to Hans J Wegner, to name but a few.<\/p>",
+          "content": "t:<p>Style Mid Century Designer Dining from Oak to Fibreglass, Verner Panton to Hans J Wegner, to name but a few.<\/p>",
           "collection": "chairs"
         }
       },
@@ -1598,7 +1598,7 @@
         "settings": {
           "layout": "slider",
           "heading": "t:DESIGNER LIGHTING",
-          "content": "<p>Style Mid Century Designer Lighting such as Artichoke Light, Verner Panton Globe Pendant, are a few of the beautiful collections that Mobelaris offer.<\/p>",
+          "content": "t:<p>Style Mid Century Designer Lighting such as Artichoke Light, Verner Panton Globe Pendant, are a few of the beautiful collections that Mobelaris offer.<\/p>",
           "collection": "lighting"
         }
       },
@@ -1607,7 +1607,7 @@
         "settings": {
           "layout": "slider",
           "heading": "t:BEST SELLERS",
-          "content": "<p>Top picks decided by you the customer, usually in stock and to dispach with in 72 hours, European favourites to your door.<\/p>",
+          "content": "t:<p>Top picks decided by you the customer, usually in stock and to dispach with in 72 hours, European favourites to your door.<\/p>",
           "collection": "express-delivery"
         }
       },
@@ -1619,7 +1619,7 @@
             "settings": {
               "image": "\/shop_images\/premium-collection-bahaus.png",
               "heading": "t:Bauhaus Furniture",
-              "content": "<p>If you want functional, simplistic designs to decorate your space, our selection of Bauhaus Furniture is perfect for you.<\/p>",
+              "content": "t:<p>If you want functional, simplistic designs to decorate your space, our selection of Bauhaus Furniture is perfect for you.<\/p>",
               "url": ""
             }
           },
@@ -1628,7 +1628,7 @@
             "settings": {
               "image": "\/shop_images\/premium-collection-industrial.png",
               "heading": "t:Industrial Furniture",
-              "content": "<p>Mobelaris has an array of modern and vintage industrial furniture that will beautifully transform your living or working space.<\/p>",
+              "content": "t:<p>Mobelaris has an array of modern and vintage industrial furniture that will beautifully transform your living or working space.<\/p>",
               "url": ""
             }
           },
@@ -1637,7 +1637,7 @@
             "settings": {
               "image": "\/shop_images\/premium-collection-office-furniture.png",
               "heading": "t:Office Furniture",
-              "content": "<p>Elegant, quality and affordable pieces of high-quality replicas of designer items that your home or office deserves.<\/p>",
+              "content": "t:<p>Elegant, quality and affordable pieces of high-quality replicas of designer items that your home or office deserves.<\/p>",
               "url": ""
             }
           },
@@ -1646,7 +1646,7 @@
             "settings": {
               "image": "\/shop_images\/premium-collection-ch23.png",
               "heading": "t:CH23 Chairs",
-              "content": "<p>The CH23 Chair, a wooden dining chair with paper cord seat, it has been the best seller since it was released.<\/p>",
+              "content": "t:<p>The CH23 Chair, a wooden dining chair with paper cord seat, it has been the best seller since it was released.<\/p>",
               "url": ""
             }
           },
@@ -1655,7 +1655,7 @@
             "settings": {
               "image": "\/shop_images\/premium-collection-noguchi.png",
               "heading": "t:Noguchi Coffee Tables",
-              "content": "<p>A triumph of minimalist design that combines natural and man-made materials for a stunning effect.<\/p>",
+              "content": "t:<p>A triumph of minimalist design that combines natural and man-made materials for a stunning effect.<\/p>",
               "url": ""
             }
           },
@@ -1664,7 +1664,7 @@
             "settings": {
               "image": "\/shop_images\/designer-pendant-lights.png",
               "heading": "t:Artichoke Lamps",
-              "content": "<p>Our replica of the Artichoke Lamp portrays the classic feel of the early 60’s because of its luxurious design.<\/p>",
+              "content": "t:<p>Our replica of the Artichoke Lamp portrays the classic feel of the early 60’s because of its luxurious design.<\/p>",
               "url": ""
             }
           },
@@ -1673,7 +1673,7 @@
             "settings": {
               "image": "\/shop_images\/premium-collection-togo.png",
               "heading": "t:Togo Style Sofa",
-              "content": "<p>This cult classic features its recognizable curved outline and pleated fabric design, perfect to lay back and relax.<\/p>",
+              "content": "t:<p>This cult classic features its recognizable curved outline and pleated fabric design, perfect to lay back and relax.<\/p>",
               "url": ""
             }
           },
@@ -1682,7 +1682,7 @@
             "settings": {
               "image": "\/shop_images\/premium-collection-wishbone.png",
               "heading": "t:Wishbone (Y) Chair - CH24",
-              "content": "<p>Captures the quintessential Danish mid-century modern design. Truly a unique piece to elevate any space.<\/p>",
+              "content": "t:<p>Captures the quintessential Danish mid-century modern design. Truly a unique piece to elevate any space.<\/p>",
               "url": ""
             }
           },
@@ -1691,7 +1691,7 @@
             "settings": {
               "image": "\/shop_images\/premium-collection-camaleonda.png",
               "heading": "t:Camaleonda Style Sofa",
-              "content": "<p>This masterpiece is built for comfort. Nothing suggest relaxation and mellowed vibe more than this unique chair.<\/p>",
+              "content": "t:<p>This masterpiece is built for comfort. Nothing suggest relaxation and mellowed vibe more than this unique chair.<\/p>",
               "url": ""
             }
           }
@@ -1710,7 +1710,7 @@
         "settings": {
           "layout": "grid",
           "heading": "t:SEARCH BY GENRE",
-          "content": "<p>Rustic Moderm, Bauhaus, Mid Century or colourful 70's style, Mobelaris have a broad range of designs to fullfill all aspirations.<\/p>",
+          "content": "t:<p>Rustic Moderm, Bauhaus, Mid Century or colourful 70's style, Mobelaris have a broad range of designs to fullfill all aspirations.<\/p>",
           "collection": ""
         }
       },
@@ -1719,11 +1719,11 @@
         "settings": {
           "service_heading": "t:SERVICE LEVEL ASSURANCE",
           "service_img_1": "\/shop_images\/service1.png",
-          "service_text_1": "<p>Call one of our customer suppoer staff<br\/>or<br\/>Fill out the contact us form below<\/p>",
+          "service_text_1": "t:<p>Call one of our customer suppoer staff<br\/>or<br\/>Fill out the contact us form below<\/p>",
           "service_img_2": "\/shop_images\/service2.png",
-          "service_text_2": "<p>For larger projects we will arrange a meeting to discuss your requirement<br\/>or<br\/>Put a mood board together based requirements made over the phone.<\/p>",
+          "service_text_2": "t:<p>For larger projects we will arrange a meeting to discuss your requirement<br\/>or<br\/>Put a mood board together based requirements made over the phone.<\/p>",
           "service_img_3": "\/shop_images\/service3.png",
-          "service_text_3": "<p>Send over your qoute, with lead times terms and conditions, and desposit required.<\/p>",
+          "service_text_3": "t:<p>Send over your qoute, with lead times terms and conditions, and desposit required.<\/p>",
           "manufacturer_img": "\/shop_images\/manufacturer_1.jpg",
           "manufacturer_heading": "t:MANUFACTURERS",
           "manufacturer_text": "t:<p>We only choose the highest quality factories from around the globe to manufacture your products.<\/p><p>Most of our factories have a heritage of manufacturing dating back 20+ years.<\/p><p>Working closely with these factories over the past 15 years has given us price and lead time advantages, which we then pass on to you our customer.<\/p><p>Meet the team brand we work with is required.<\/p>",
@@ -2088,6 +2088,955 @@
           "items": []
         }
       ]
+    },
+    "footer": {
+      "id": 203381997827,
+      "title": "t:Footer menu",
+      "handle": "footer",
+      "created_at": "2022-06-10T08:52:41+01:00",
+      "updated_at": "2022-07-11T09:28:32+01:00",
+      "items": [
+        {
+          "id": 471573135619,
+          "title": "t:Categories",
+          "subject": "collections",
+          "subject_id": null,
+          "subject_params": null,
+          "type": "collections",
+          "items": [
+            {
+              "id": 472557715715,
+              "title": "t:Chairs",
+              "subject": "chairs",
+              "subject_id": 394931503363,
+              "subject_params": null,
+              "type": "collection",
+              "items": []
+            },
+            {
+              "id": 472557748483,
+              "title": "t:Sofas",
+              "subject": "sofas",
+              "subject_id": 394931339523,
+              "subject_params": null,
+              "type": "collection",
+              "items": []
+            },
+            {
+              "id": 472557781251,
+              "title": "t:Lighting",
+              "subject": "lighting",
+              "subject_id": 394932158723,
+              "subject_params": null,
+              "type": "collection",
+              "items": []
+            },
+            {
+              "id": 472920326403,
+              "title": "t:Tables",
+              "subject": "tables",
+              "subject_id": 394931831043,
+              "subject_params": null,
+              "type": "collection",
+              "items": []
+            },
+            {
+              "id": 472557814019,
+              "title": "t:Accessories",
+              "subject": "accessories",
+              "subject_id": 394932060419,
+              "subject_params": null,
+              "type": "collection",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": 472557846787,
+          "title": "t:Infomation",
+          "subject": "infomation",
+          "subject_id": null,
+          "subject_params": null,
+          "type": "frontpage",
+          "items": [
+            {
+              "id": 472558371075,
+              "title": "t:About us",
+              "subject": "\/pages\/about-us",
+              "subject_id": null,
+              "subject_params": null,
+              "type": "http",
+              "items": []
+            },
+            {
+              "id": 472558403843,
+              "title": "t:Covid-19 FAQ",
+              "subject": "covid-19-faq",
+              "subject_id": 98801451267,
+              "subject_params": null,
+              "type": "page",
+              "items": []
+            },
+            {
+              "id": 472558436611,
+              "title": "t:Contact us",
+              "subject": "contact",
+              "subject_id": 98525348099,
+              "subject_params": null,
+              "type": "page",
+              "items": []
+            },
+            {
+              "id": 472558502147,
+              "title": "t:Terms \u0026 Conditions",
+              "subject": "terms-conditions",
+              "subject_id": 98801647875,
+              "subject_params": null,
+              "type": "page",
+              "items": []
+            },
+            {
+              "id": 472558534915,
+              "title": "t:Privacy Policy",
+              "subject": "privacy-policy",
+              "subject_id": 98801582339,
+              "subject_params": null,
+              "type": "page",
+              "items": []
+            },
+            {
+              "id": 472558567683,
+              "title": "t:Return \u0026 Refunds",
+              "subject": "return-refunds",
+              "subject_id": 98801680643,
+              "subject_params": null,
+              "type": "page",
+              "items": []
+            },
+            {
+              "id": 472898896131,
+              "title": "t:Trade",
+              "subject": "trade",
+              "subject_id": 98901197059,
+              "subject_params": null,
+              "type": "page",
+              "items": []
+            },
+            {
+              "id": 472783880451,
+              "title": "t:Brexit",
+              "subject": "the-big-brexit-questions",
+              "subject_id": 587629592835,
+              "subject_params": null,
+              "type": "article",
+              "items": []
+            },
+            {
+              "id": 472558469379,
+              "title": "t:Faqs",
+              "subject": "faqs",
+              "subject_id": 98801549571,
+              "subject_params": null,
+              "type": "page",
+              "items": []
+            },
+            {
+              "id": 472783945987,
+              "title": "t:Transparency Policy",
+              "subject": "transparency-policy",
+              "subject_id": 98869969155,
+              "subject_params": null,
+              "type": "page",
+              "items": []
+            },
+            {
+              "id": 472784109827,
+              "title": "t:Ethical Trading",
+              "subject": "ethical-trading-policy",
+              "subject_id": 98870034691,
+              "subject_params": null,
+              "type": "page",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": 472557879555,
+          "title": "t:Account",
+          "subject": "account",
+          "subject_id": null,
+          "subject_params": null,
+          "type": "http",
+          "items": [
+            {
+              "id": 472558600451,
+              "title": "t:My account",
+              "subject": "\/account",
+              "subject_id": null,
+              "subject_params": null,
+              "type": "http",
+              "items": []
+            },
+            {
+              "id": 472558633219,
+              "title": "t:Order tracking",
+              "subject": "\/pages\/order-tracking",
+              "subject_id": null,
+              "subject_params": null,
+              "type": "http",
+              "items": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "others": {
+    "strings": {
+      "product_review": {
+        "reviews": "t:Reviews",
+        "add_your_review": "t:Add your review",
+        "add_a_review": "t:Add A Review",
+        "your_rating": "t:Your Rating",
+        "nick_name": "t:NickName",
+        "summary": "t:Summary",
+        "review": "t:Review",
+        "send": "t:Send",
+        "thank_for_your_review": "t:Thanks for the review."
+      },
+      "revslider": {
+        "title": "t:Big sumer savings"
+      },
+      "homepage-chart": {
+        "traditional": "t:Traditional",
+        "chart-label": "t:*The price for a F Hansen, Egg chair *The price for a F Hansen, Egg chair"
+      },
+      "languages": {
+        "en": "t:English",
+        "nl": "t:Dutch",
+        "fr": "t:French",
+        "de": "t:German"
+      },
+      "instagram": {
+        "title": "t:Instagram \/ Customer Gallery"
+      },
+      "promo": {
+        "up_to": "t:Up to",
+        "percent": "t:50%",
+        "off": "t:off",
+        "express": "t:Express",
+        "delivery": "t:Delivery"
+      },
+      "general": {
+        "general": "t:CATEGORIES",
+        "tags": "t:TAGS",
+        "badge_oak_wood": "t:badge_oak_wood.png",
+        "badge_ashwood": "t:badge_ashwood.png",
+        "badge_original_dining_chair": "t:badge_original_dining_chair.png",
+        "badge_walnut_wood": "t:badge_walnut_wood.png",
+        "bestsellerimg": "t:Best-Seller.png",
+        "discountimg": "t:badge_discount.png",
+        "description": "t:description",
+        "dimension": "t:dimension",
+        "cart": "t:MY CART",
+        "account": "t:ACCOUNT",
+        "faq": "t:FAQ",
+        "address": "t:Address",
+        "contact_us": "t:Contact Us",
+        "email": "t:Email",
+        "show_express_delivery_options": "t:Show Express Delivery Options",
+        "learn_more": "t:Learn More",
+        "verified_reviews": "t:VERIFIED REVIEWS",
+        "privacy_policy": "t:Privacy Policy",
+        "terms_conditions": "t:Terms & Conditions",
+        "view_all": "t:VIEW ALL",
+        "all_reviews": "t:All Reviews",
+        "shop_instagram": "t:Shop Instagram",
+        "see_all": "t:SEE ALL",
+        "best_seller": "t:BEST SELLER",
+        "new_product": "t:NEW PRODUCT",
+        "inspired_by": "t:Inspired By",
+        "more-filters": "t:More filers",
+        "filter-products": "t:Filter products",
+        "clear-all": "t:Clear all",
+        "percentage_off": "t:{{number}} OFF",
+        "verified-reviews": "t:VERIFIED REVIEWS",
+        "from": "t:From",
+        "to": "t:To",
+        "max": "t:Max",
+        "apply": "t:Apply",
+        "the-finer-details": "t:THE FINER DETAILS",
+        "contemporary-inspiration": "t:CONTEMPORARY INSPIRATION",
+        "language_label": "t:Language",
+        "change-shipping-country-and-language": "t:Change shipping country and language",
+        "designers": "t:Designers",
+        "availabilityfilter": "t:Express Delivery",
+        "sale_ends_in": "t:SALE ENDS IN",
+        "days": "t:Days",
+        "day": "t:Day",
+        "delivery-label-image": "t:Free-Delivery-Product-Page-gb.png"
+      },
+      "product_options": {
+        "choose-colours": "t:Choose Colours:",
+        "choose-colour": "t:Choose Colour",
+        "choose-finish": "t:Choose. Finish",
+        "color": "t:Color",
+        "choose-material": "t:Choose. Material",
+        "upholstery": "t:Upholstery",
+        "finish": "t:Finish",
+        "choose-materials": "t:Choose. Materials",
+        "woods-finishes": "t:Woods \/ Finishes",
+        "material-size": "t:Material \/ Size",
+        "material": "t:Material",
+        "fabric": "t:Fabric",
+        "wood-options": "t:Wood Options",
+        "fabric-choice": "t:Fabric Choice :",
+        "diameter": "t:Diameter",
+        "piping-option": "t:Piping Option",
+        "fibreglass": "t:Fibreglass:",
+        "size": "t:Size",
+        "position-of-chaise": "t:Position Of Chaise",
+        "chrome": "t:Chrome",
+        "amber": "t:Amber",
+        "dark-blue": "t:Dark Blue",
+        "violet": "t:Violet",
+        "yellow": "t:Yellow",
+        "turquoise": "t:Turquoise",
+        "bell-gray-gray": "t:Bell GrayGray",
+        "charcoal-grey-alcantara": "t:Charcoal Grey Alcantara",
+        "creamy-alcantara": "t:Creamy Alcantara",
+        "light-grey-alcantara": "t:Light Grey Alcantara",
+        "bottle-green-velvet": "t:Bottle Green Velvet",
+        "dark-grey-velvet": "t:Dark Grey Velvet",
+        "dark-red-velvet": "t:Dark Red Velvet",
+        "creamy-boucle": "t:Creamy Boucle",
+        "velvet": "t:Velvet",
+        "alcantara": "t:Alcantara",
+        "boucle": "t:Boucle",
+        "deep-red": "t:Deep Red",
+        "bottle-green": "t:Bottle Green",
+        "dark-aqua-velvet": "t:Dark Aqua Velvet",
+        "pink-velvet": "t:Pink Velvet",
+        "charcoal-grey-velvet": "t:Charcoal Grey Velvet",
+        "bright-grey-velvet": "t:Bright Grey Velvet",
+        "pebble-green-velvet": "t:Pebble Green Velvet",
+        "antique-brown": "t:Antique Brown",
+        "black": "t:Black",
+        "gold": "t:Gold",
+        "dark-grey": "t:Dark Grey",
+        "light-grey": "t:Light Grey",
+        "burgundy": "t:Burgundy",
+        "coronation": "t:Coronation",
+        "dusty-pink": "t:Dusty Pink",
+        "mocha": "t:Mocha",
+        "petrol-blue": "t:Petrol Blue",
+        "white": "t:White",
+        "red": "t:Red",
+        "wihte": "t:Wihte",
+        "dark-tan": "t:Dark Tan",
+        "light-pebble-grey": "t:Light Pebble Grey",
+        "charcoal-grey": "t:Charcoal Grey",
+        "morocan-blue": "t:Morocan Blue",
+        "orange": "t:Orange",
+        "purple": "t:Purple",
+        "light-green": "t:Light Green",
+        "grey": "t:Grey",
+        "cognac": "t:Cognac",
+        "moroccan-blue": "t:Moroccan Blue",
+        "blue": "t:Blue",
+        "green": "t:Green",
+        "deep-purple": "t:Deep Purple",
+        "plywood": "t:Plywood",
+        "walnut": "t:Walnut",
+        "light-blue": "t:Light Blue",
+        "walnut-veneer": "t:Walnut Veneer",
+        "pink": "t:Pink",
+        "brown-velvet": "t:Brown Velvet",
+        "blue-velvet": "t:Blue Velvet",
+        "grey-velvet": "t:Grey Velvet",
+        "solid-ash": "t:Solid Ash",
+        "sheepskin": "t:Sheepskin",
+        "marble": "t:Marble",
+        "white-marble": "t:White Marble",
+        "white-quartz-120": "t:White Quartz 120",
+        "white-quartz-160": "t:White Quartz 160",
+        "black-nero-marquina-marble": "t:Black Nero Marquina Marble",
+        "90-cm": "t:90 CM",
+        "120-cm": "t:120 CM",
+        "aqua-blue": "t:Aqua Blue",
+        "beige": "t:Beige",
+        "tan": "t:Tan",
+        "red-leather": "t:Red Leather",
+        "ash": "t:Ash",
+        "natural": "t:Natural",
+        "solid-oak": "t:Solid Oak",
+        "wool": "t:Wool",
+        "premium-leather": "t:Premium Leather",
+        "oak": "t:Oak",
+        "beech": "t:Beech",
+        "cream": "t:Cream",
+        "italian-leather": "t:Italian Leather",
+        "rosewood": "t:Rosewood",
+        "dusty-rose": "t:Dusty Rose",
+        "mustard": "t:Mustard",
+        "solid-american-ashwood": "t:Solid American Ashwood",
+        "nord-dark-pebble": "t:Nord Dark Pebble",
+        "nord-red": "t:Nord Red",
+        "nord-grey": "t:Nord Grey",
+        "nord-dark-aqua": "t:Nord Dark Aqua",
+        "nord-light-sage": "t:Nord Light Sage",
+        "camel": "t:Camel",
+        "smoked-transparent": "t:Smoked Transparent",
+        "clear": "t:Clear",
+        "patchwork": "t:Patchwork",
+        "brushed-brass": "t:Brushed Brass",
+        "medium": "t:Medium",
+        "large": "t:Large",
+        "black-cowhide": "t:Black Cowhide",
+        "brown-cowhide": "t:Brown Cowhide",
+        "black-laquered": "t:Black Laquered",
+        "black-gold": "t:Black \/ Gold",
+        "white-gold": "t:White \/ Gold",
+        "gold-gold": "t:Gold \/ Gold",
+        "rattan": "t:Rattan",
+        "maple": "t:Maple",
+        "brass": "t:Brass",
+        "without-throw": "t:Without throw",
+        "with-throw": "t:With throw",
+        "small": "t:Small",
+        "ash-wood": "t:Ash Wood",
+        "silver": "t:Silver",
+        "olive": "t:Olive",
+        "multi-color": "t:Multi Color",
+        "dark-wood": "t:Dark Wood",
+        "light-wood": "t:Light Wood",
+        "soaped-oak": "t:Soaped - Oak",
+        "black-lacquered": "t:Black Lacquered",
+        "black-painted-ash": "t:Black Painted Ash",
+        "walnut-oak": "t:Walnut \/ Oak",
+        "smoke-gray": "t:Smoke Gray",
+        "coffee": "t:Coffee",
+        "transparent": "t:Transparent",
+        "30-cm": "t:30 CM",
+        "rose-gold": "t:Rose Gold",
+        "pearl-black": "t:Pearl Black",
+        "45-cm": "t:45 CM",
+        "60-cm": "t:60 CM",
+        "80-cm": "t:80 CM",
+        "melt-red-copper": "t:Melt Red Copper",
+        "melt-chrome": "t:Melt Chrome",
+        "melt-gold": "t:Melt Gold",
+        "bliss-coffee": "t:Bliss Coffee",
+        "matt-black": "t:Matt Black",
+        "matt-gray": "t:Matt Gray",
+        "matt-coffee": "t:Matt Coffee",
+        "multicolor": "t:Multicolor",
+        "antique-blue": "t:Antique Blue",
+        "dark-brown": "t:Dark Brown",
+        "x-large": "t:X Large",
+        "basalt": "t:Basalt",
+        "mauve": "t:Mauve",
+        "moss-grey": "t:Moss Grey",
+        "teal": "t:Teal",
+        "grey-transparent": "t:Grey Transparent",
+        "105-cm": "t:105 CM",
+        "multitone": "t:Multitone",
+        "black-maple": "t:Black \/ Maple",
+        "blue-multitone": "t:Blue Multitone",
+        "green-multitone": "t:Green Multitone",
+        "red-multitone": "t:Red  Multitone",
+        "polished-ss": "t:Polished SS",
+        "bordeaux": "t:Bordeaux",
+        "citrus": "t:Citrus",
+        "dark-green": "t:Dark Green",
+        "lacquered": "t:Lacquered",
+        "false": "t:false",
+        "terracota": "t:Terracota",
+        "brown-white-black": "t:Brown + White + Black",
+        "black-white": "t:Black + White",
+        "oak-veneer": "t:Oak Veneer",
+        "caramel-aniline": "t:Caramel Aniline",
+        "32-cm": "t:32 CM",
+        "without-piping": "t:Without piping",
+        "with-piping": "t:With piping",
+        "aluminium": "t:Aluminium",
+        "lime": "t:Lime",
+        "oak-soap-finish": "t:Oak Soap Finish",
+        "walnut-stain": "t:Walnut Stain",
+        "special-edition": "t:Special Edition",
+        "oak-oiled": "t:Oak - Oiled",
+        "petrol-green": "t:Petrol Green",
+        "red-berry": "t:Red Berry",
+        "steel-blue": "t:Steel Blue",
+        "old-pink": "t:Old Pink",
+        "dark-pebble-grey": "t:Dark Pebble Grey",
+        "ph-yellow": "t:PH Yellow",
+        "ph-red": "t:PH Red",
+        "ph-white": "t:PH White",
+        "ph-green": "t:PH Green",
+        "bliss-black-gray": "t:Bliss Black Gray",
+        "bliss-black-green": "t:Bliss Black Green",
+        "bliss-brass-gray": "t:Bliss Brass Gray",
+        "bliss-brass-green": "t:Bliss Brass Green",
+        "bliss-copper-gray": "t:Bliss Copper Gray",
+        "bliss-gray-green": "t:Bliss Gray Green",
+        "copper": "t:Copper",
+        "48-cm": "t:48 CM",
+        "72-cm": "t:72 CM",
+        "84-cm": "t:84 CM",
+        "white-glass-opaque": "t:White Glass - Opaque",
+        "white-n-brass": "t:White N Brass",
+        "shades-of-blue": "t:Shades Of Blue",
+        "shades-of-red": "t:Shades Of Red",
+        "shades-of-grey": "t:Shades of Grey",
+        "shades-of-green": "t:Shades Of Green",
+        "shades-of-white": "t:Shades Of White",
+        "13-cm": "t:13 CM",
+        "23-cm": "t:23 CM",
+        "31-cm": "t:31 CM",
+        "47-cm": "t:47 CM",
+        "copper-bronze": "t:Copper Bronze",
+        "left-chaise": "t:LEFT CHAISE",
+        "right-chaise": "t:RIGHT CHAISE",
+        "buck-brown": "t:Buck Brown",
+        "dark-burgundy-waxy": "t:Dark Burgundy Waxy",
+        "american-walnut": "t:American Walnut",
+        "96-cm": "t:96 CM",
+        "102-cm": "t:102 CM",
+        "yellow-lacquered": "t:Yellow Lacquered",
+        "black-marble": "t:Black Marble"
+      }
+    },
+    "password": {
+      "general": {
+        "thanks": "t:Thank you for joining our list",
+        "enter_store": "t:Login with Password:",
+        "password": "t:Password",
+        "enter": "t:Enter",
+        "email_address": "t:Email Address",
+        "submit": "t:Submit",
+        "powered": "t:This Store will be powered by"
+      }
+    },
+    "general": {
+      "404": {
+        "title": "t:Oops - We couldn't find that one",
+        "subtext": "t:This page does not exist. Try searching for what you would like to find:"
+      },
+      "pagination": {
+        "showing_items": "t:Showing items",
+        "of": "t:of"
+      },
+      "forms": {
+        "post_error": "t:Sorry, looks like something went wrong. Please correct the following and submit again:"
+      },
+      "breadcrumbs": {
+        "home": "t:Home"
+      },
+      "newsletter_form": {
+        "newsletter_email": "t:Join our mailing list",
+        "thanks": "t:Thank you for joining",
+        "popup_thanks": "t:Thank you for joining, here is your coupon code:",
+        "email_placeholder": "t:Email address",
+        "confirmation": "t:Thanks for joining!",
+        "submit": "t:Join"
+      },
+      "search": {
+        "no_results_html": "t:Your search for \"{{ terms }}\" did not yield any results.",
+        "results_for_html": "t:Your search for \"{{ terms }}\" revealed the following:",
+        "title": "t:Search",
+        "placeholder": "t:Search entire store here...",
+        "submit": "t:Search"
+      },
+      "currency": {
+        "dropdown_label": "t:Currency"
+      },
+      "language": {
+        "dropdown_label": "t:Language"
+      },
+      "accessibility": {
+        "unit_price_separator": "t:per"
+      }
+    },
+    "blogs": {
+      "article": {
+        "posted_on_date_html": "t:Posted on <time datetime=\"{{ date }}\">{{ date }}<\/time>",
+        "tags": "t:Tags",
+        "tagged": "t:Tagged",
+        "comments": "t:Comments",
+        "read_more": "t:Read More"
+      },
+      "comments": {
+        "title": "t:Leave a comment",
+        "name": "t:Name",
+        "email": "t:Email",
+        "message": "t:Comment",
+        "moderated": "t:All blog comments are checked prior to publishing",
+        "post": "t:Post comment",
+        "success_moderated": "t:Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+        "success": "t:Your comment was posted successfully! Thank you!",
+        "comments_with_count": {
+          "one": "t:{{ count }} comment",
+          "other": "t:{{ count }} comments"
+        }
+      },
+      "sidebar": {
+        "social_title": "t:Connect with us",
+        "twitter_title": "t:On Twitter",
+        "facebook_title": "t:Like us on Facebook",
+        "recent_posts": "t:Recent Posts",
+        "tags": "t:Filter Article Tags"
+      }
+    },
+    "store_availability": {
+      "general": {
+        "view_store_info": "t:View store information",
+        "check_other_stores": "t:Check availability at other stores",
+        "pick_up_available": "t:Pickup available",
+        "pick_up_currently_unavailable": "t:Pickup currently unavailable",
+        "pick_up_available_at_html": "t:Pickup available at <strong>{{ location_name }}<\/strong>",
+        "pick_up_unavailable_at_html": "t:Pickup currently unavailable at <strong>{{ location_name }}<\/strong>"
+      }
+    },
+    "cart": {
+      "general": {
+        "title": "t:My Cart",
+        "summary": "t:Cart Summary",
+        "close_cart": "t:Close",
+        "shipping": "t:Shipping",
+        "tax": "t:Tax",
+        "at_checkout": "t:Calculated at checkout",
+        "empty": "t:Your cart is currently empty.",
+        "product": "t:Product",
+        "price": "t:Price",
+        "qty": "t:Qty",
+        "remove": "t:Remove",
+        "total": "t:Total",
+        "subtotal": "t:Subtotal",
+        "continue": "t:Continue Shopping",
+        "update": "t:Update Cart",
+        "checkout": "t:Check Out",
+        "agreeterm_html": "t:I agree with the <a href=\"\/pages\/terms-conditions\" target=\"_blank\" class=\"js-no-transition tw-text-secondary tw-underline\">terms and conditions<\/a>",
+        "agreeterm_alert": "t:You must agree with the terms and conditions of sales to check out",
+        "note": "t:Order Special Instructions",
+        "recently_viewed": "t:You also Viewed",
+        "cart_discount": "t:Discount Code (Applied at Checkout)",
+        "free_shipping_before": "t:You are only",
+        "free_shipping_after": "t:away from Free Domestic Shipping!",
+        "free_shipping_qualified": "t:Your order qualifies for Free Domestic Shipping!",
+        "free_shipping_exclusions": "t:(Excludes International)",
+        "discounts": "t:Discounts",
+        "savings": "t:Total Savings",
+        "discount_applied": "t:Discount Applied!",
+        "items": "t:Item(s)"
+      }
+    },
+    "collections": {
+      "general": {
+        "all_collections": "t:Collections",
+        "all_products": "t:All Products",
+        "no_matches": "t:There are no items in this collection",
+        "shop_by_designer": "t:Shop by Designer"
+      },
+      "sorting": {
+        "title": "t:Sort by",
+        "featured": "t:Featured",
+        "best_selling": "t:Best Selling",
+        "az": "t:Alphabetically, A-Z",
+        "za": "t:Alphabetically, Z-A",
+        "price_ascending": "t:Price, low to high",
+        "price_descending": "t:Price, high to low",
+        "date_descending": "t:Date, new to old",
+        "date_ascending": "t:Date, old to new"
+      },
+      "filter": {
+        "filtering_by": "t:Filtering By:",
+        "refine": "t:Refine"
+      }
+    },
+    "contact": {
+      "form": {
+        "name": "t:Name",
+        "firstname": "t:First Name",
+        "lastname": "t:Last Name",
+        "subject": "t:Subject",
+        "companyname": "t:Company",
+        "address": "t:Address",
+        "email": "t:Email",
+        "phone": "t:Phone Number",
+        "message": "t:Message",
+        "websiteurl": "t:Website URL",
+        "acceptsmarketing": "t:Subscribe to stay updated with new products and offers!",
+        "send": "t:Send",
+        "post_success": "t:Thanks for contacting us. We'll get back to you as soon as possible."
+      }
+    },
+    "customer": {
+      "account": {
+        "title": "t:Account",
+        "logout": "t:Logout",
+        "link": "t:Back to Account",
+        "signup": "t:Login or create an account",
+        "details": "t:Account Details",
+        "view_addresses": "t:View Addresses",
+        "returns_content": "t:Return\/Exchange",
+        "return": "t:Return to Account Details"
+      },
+      "activate_account": {
+        "title": "t:Activate Account",
+        "subtext": "t:Create your password to activate your account.",
+        "password": "t:Password",
+        "password_confirm": "t:Confirm Password",
+        "submit": "t:Activate Account",
+        "cancel": "t:Decline Invitation"
+      },
+      "addresses": {
+        "title": "t:Your Addresses",
+        "default": "t:Primary Address",
+        "add_new": "t:Add a New Address",
+        "edit_address": "t:Edit address",
+        "first_name": "t:First Name",
+        "last_name": "t:Last Name",
+        "company": "t:Company",
+        "address1": "t:Address1",
+        "address2": "t:Address2",
+        "city": "t:City",
+        "country": "t:Country",
+        "province": "t:Province",
+        "zip": "t:Postal\/Zip Code",
+        "phone": "t:Phone",
+        "set_default": "t:Set as default address",
+        "add": "t:Add Address",
+        "update": "t:Update Address",
+        "cancel": "t:Cancel",
+        "edit": "t:Edit",
+        "delete": "t:Delete"
+      },
+      "login": {
+        "title": "t:Login",
+        "email": "t:Email",
+        "password": "t:Password",
+        "forgot_password": "t:Forgot your password?",
+        "sign_in": "t:Sign In",
+        "cancel": "t:Return to Store",
+        "guest_title": "t:Continue as a guest",
+        "guest_continue": "t:Continue"
+      },
+      "orders": {
+        "title": "t:Order History",
+        "order_number": "t:Order",
+        "date": "t:Date",
+        "payment_status": "t:Payment Status",
+        "fulfillment_status": "t:Fulfillment Status",
+        "total": "t:Total",
+        "none": "t:You haven't placed any orders yet."
+      },
+      "order": {
+        "title": "t:Order",
+        "date": "t:Placed on",
+        "cancelled": "t:Order Cancelled on",
+        "cancelled_reason": "t:Reason: {{ reason }}",
+        "billing_address": "t:Billing Address",
+        "payment_status": "t:Payment Status",
+        "shipping_address": "t:Shipping Address",
+        "fulfillment_status": "t:Fulfillment Status",
+        "discount": "t:Discount",
+        "shipping": "t:Shipping",
+        "tax": "t:Tax",
+        "order_details": "t:Order Details",
+        "details": {
+          "product": "t:Product",
+          "sku": "t:SKU",
+          "price": "t:Price",
+          "quantity": "t:Quantity",
+          "total": "t:Total",
+          "fulfilled_at": "t:Fulfilled {{ date }}",
+          "subtotal": "t:Subtotal"
+        }
+      },
+      "recover_password": {
+        "title": "t:Reset your password",
+        "email": "t:Email",
+        "submit": "t:Submit",
+        "cancel": "t:Cancel",
+        "subtext": "t:We will send you an email to reset your password.",
+        "success": "t:We've sent you an email with a link to update your password."
+      },
+      "reset_password": {
+        "title": "t:Reset account password",
+        "subtext": "t:Enter a new password for {{ email }}",
+        "password": "t:Password",
+        "password_confirm": "t:Confirm Password",
+        "submit": "t:Reset Password"
+      },
+      "register": {
+        "title": "t:Create Account",
+        "first_name": "t:First Name",
+        "last_name": "t:Last Name",
+        "email": "t:Email",
+        "password": "t:Password",
+        "submit": "t:Create"
+      }
+    },
+    "layout": {
+      "footer": {
+        "copyright": "t:Copyright",
+        "theme_title": "t:by"
+      },
+      "homepage": {
+        "mailing_list_join": "t:Hello You!",
+        "mailing_list_text": "t:Join our mailing list",
+        "onboarding": {
+          "no_content": "t:This section doesn’t currently include any content. Add content to this section using the sidebar."
+        }
+      },
+      "mobile_nav": {
+        "account": "t:Account",
+        "login": "t:Log In\/Create Account",
+        "logout": "t:Logout"
+      }
+    },
+    "products": {
+      "general": {
+        "new": "t:NEW",
+        "sale": "t:SALE",
+        "sold": "t:SOLD OUT",
+        "quick_view": "t:Quick View",
+        "from": "t:From",
+        "view_full": "t:View Full Details",
+        "view_all": "t:View All",
+        "related": "t:More in this Collection",
+        "sale_price": "t:Sale",
+        "regular_price": "t:Regular"
+      },
+      "product": {
+        "designer": "t:Designer",
+        "sold_out": "t:Sold Out",
+        "from_lowest_price_html": "t:{{ lowest_price }}",
+        "unavailable": "t:Unavailable",
+        "compare_at": "t:Compare at",
+        "add_to_cart": "t:Add to Cart",
+        "quantity": "t:Quantity",
+        "select_options": "t:View options",
+        "details": "t:Details",
+        "sizing": "t:Sizing",
+        "video": "t:Video",
+        "model": "t:Product Care",
+        "back_to": "t:Back To",
+        "adding": "t:Adding...",
+        "thank_you": "t:Thank You!",
+        "added": "t:Added to Cart",
+        "view_cart": "t:View Cart",
+        "or": "t:or",
+        "continue": "t:Continue Shopping",
+        "qty_error_first": "t:Only",
+        "qty_error_last": "t:of this item is available",
+        "qty_sold_out": "t:This item is sold out",
+        "back_in_stock": "t:Please send me an email when this is available",
+        "back_in_stock_confirm": "t:Thanks, we will contact you when this is available",
+        "readmore": "t:Read More",
+        "view_in_space": "t:View in your space",
+        "view_in_space_label": "t:View in your space, loads item in augmented reality window",
+        "unit_price_label": "t:Unit Price"
+      }
+    },
+    "gift_cards": {
+      "issued": {
+        "title": "t:Here's your {{ value }} gift card for {{ shop }}!",
+        "subtext": "t:Here's your gift card!",
+        "disabled": "t:Disabled",
+        "expired": "t:Expired on {{ expiry }}",
+        "active": "t:Expires on {{ expiry }}",
+        "redeem": "t:Use this code at checkout to redeem your gift card",
+        "shop_link": "t:Start shopping",
+        "print": "t:Print",
+        "email": "t:Email"
+      }
+    },
+    "social": {
+      "icons": {
+        "facebook": "t:Share on Facebook",
+        "twitter": "t:Share on Twitter",
+        "pinterest": "t:Share on Pinterest"
+      },
+      "product_share": {
+        "share": "t:Share"
+      }
+    },
+    "shopify": {
+      "links": {
+        "powered_by_shopify": "t: "
+      }
+    },
+    "pagefly": {
+      "products": {
+        "product": {
+          "regular_price": "t:Regular price",
+          "sold_out": "t:Sold out",
+          "unavailable": "t:Unavailable",
+          "on_sale": "t:Sale",
+          "quantity": "t:Quantity",
+          "add_to_cart": "t:Add to cart",
+          "back_to_collection": "t:Back to {{ title }}",
+          "view_details": "t:View details"
+        }
+      },
+      "article": {
+        "tags": "t:Tags:",
+        "all_topics": "t:All topics",
+        "by_author": "t:by {{ author }}",
+        "posted_in": "t:Posted in",
+        "read_more": "t:Read more",
+        "back_to_blog": "t:Back to {{ title }}"
+      },
+      "comments": {
+        "title": "t:Leave a comment",
+        "name": "t:Name",
+        "email": "t:Email",
+        "message": "t:Message",
+        "post": "t:Post comment",
+        "moderated": "t:Please note, comments must be approved before they are published",
+        "success_moderated": "t:Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+        "success": "t:Your comment was posted successfully! Thank you!",
+        "comments_with_count": {
+          "one": "t:{{ count }} comment",
+          "other": "t:{{ count }} comments"
+        }
+      },
+      "password_page": {
+        "login_form_message": "t:Enter store using password:",
+        "login_form_password_label": "t:Password",
+        "login_form_password_placeholder": "t:Your password",
+        "login_form_submit": "t:Enter",
+        "signup_form_email_label": "t:Email",
+        "signup_form_success": "t:We will send you an email right before we open!",
+        "password_link": "t:Enter using password"
+      }
+    },
+    "templates": {
+      "search": {
+        "how_can_we_help": "t:How can we help?",
+        "no_results": "t:No results found for “{{ terms }}”. Check the spelling or use a different word or phrase.",
+        "page": "t:Page",
+        "products": "t:Products",
+        "results_with_count": {
+          "one": "t:{{ count }} result",
+          "other": "t:{{ count }} results"
+        },
+        "results_with_count_and_term": {
+          "one": "t:{{ count }} result found for “{{ terms }}”",
+          "other": "t:{{ count }} results found for “{{ terms }}”"
+        },
+        "title": "t:Search results",
+        "search_for": "t:Search for “{{ terms }}”",
+        "collections": "t:Collections",
+        "suggestions": "t:Suggestions",
+        "popular_searches": "t:Polular searches",
+        "recents": "t:Recents"
+      }
+    },
+    "accessibility": {
+      "vendor": "t:TODO"
     }
   }
 }

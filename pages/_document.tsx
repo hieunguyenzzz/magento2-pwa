@@ -5,8 +5,8 @@ class Document extends NextDocument<any> {
   render() {
     return (
       <Html>
-        <Head>{/* Inject MUI styles first to match with the prepend: true configuration. */}</Head>
-        <body>
+        <Head />
+        <body className='loading'>
           <Main />
           <NextScript />
         </body>

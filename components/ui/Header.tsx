@@ -2,7 +2,11 @@ import classNames from 'classnames'
 import { Trans } from '../../lib/i18n/I18nProvider'
 import data from './Header.data'
 import { Image } from './Image'
+import { StoreSelector } from './StoreSelector'
 
+const mobileMenuId = 'mobileMenuId'
+const searchBoxId = 'search-box'
+const openMenuMobileId = 'openMenuMobile'
 const renderMenuBlock = (block, i) => {
   switch (block.type) {
     case 'submenu_with_image':
@@ -47,11 +51,6 @@ const renderMenuBlock = (block, i) => {
                       loading='lazy'
                       className='p-[4%] border-none absolute inset-0 !w-full !h-full object-contain lazyload-fade lazyautosizes lazyloaded'
                       src={nav_image}
-                      data-sizes='auto'
-                      width
-                      height
-                      data-original='//cdn.shopify.com/s/files/1/0648/7883/8019/files/chair-image_400x.png?v=1656479420'
-                      alt
                       sizes='262px'
                     />
                   </div>
@@ -79,11 +78,6 @@ const renderMenuBlock = (block, i) => {
                       loading='lazy'
                       className='p-[4%] border-none absolute inset-0 !w-full !h-full object-contain lazyload-fade lazyautosizes lazyloaded'
                       src={nav_image_secound}
-                      data-sizes='auto'
-                      width
-                      height
-                      data-original='//cdn.shopify.com/s/files/1/0648/7883/8019/files/chair-image_400x.png?v=1656479420'
-                      alt
                       sizes='262px'
                     />
                   </div>
@@ -146,12 +140,7 @@ const renderMenuBlock = (block, i) => {
   )
 }
 export const Header = () => (
-  <header
-    className='relative z-30 border-solid header-section border-y lg:border-none border-t-white lg:pb-0'
-    data-section-id='header'
-    data-section-type='header-section'
-    data-sticky='true'
-  >
+  <header className='sticky top-0 z-30 bg-white border-solid header-section border-y lg:border-none border-t-white lg:pb-0'>
     <div>
       <div className='max-w-[1264px] w-full px-4 sm:px-8 mx-auto   relative h-[60px] lg:h-[74px] flex items-center '>
         <div className='flex justify-center w-full gap-6'>
@@ -160,7 +149,7 @@ export const Header = () => (
             <div className='text-center' id='logo'>
               <div className='text-center first_logo'>
                 <a href='/'>
-                  <img
+                  <Image
                     width={400}
                     height={200}
                     style={{ maxWidth: 175 }}
@@ -454,7 +443,9 @@ export const Header = () => (
                     margin: '8px auto 0',
                   }}
                 />
-                <div className='mt-1 text-xs leading-none text-center '>MY CART</div>
+                <div className='mt-1 text-xs leading-none text-center '>
+                  <Trans id='others.strings.general.cart' />
+                </div>
                 <span className='absolute top-0 right-0 text-white bg-black border border-white badge badge-sm empty:hidden' />
                 <span className='hidden CartCost'>£0.00</span>
               </a>
@@ -475,7 +466,9 @@ export const Header = () => (
                   }}
                 />
 
-                <div className='mt-1 text-xs leading-none text-center'>ACCOUNT</div>
+                <div className='mt-1 text-xs leading-none text-center'>
+                  <Trans id='others.strings.general.account' />
+                </div>
               </a>
             </li>
             <li>
@@ -494,197 +487,20 @@ export const Header = () => (
                   }}
                 />
 
-                <div className='mt-1 text-xs leading-none text-center '>FAQs</div>
+                <div className='mt-1 text-xs leading-none text-center '>
+                  <Trans id='others.strings.general.faq' />
+                </div>
               </a>
             </li>
             <li className='inline-flex items-center h-full align-middle'>
-              <div className='flex dropdown dropdown-end dropdown-hover'>
-                <div tabIndex={0} className=' !font-normal flex flex-col items-center !mb-0  gap-1'>
-                  <img
-                    width={19}
-                    height={18}
-                    className='w-[19px] mt-2 h-[18px] rounded-full object-cover'
-                    src='//cdn.shopify.com/s/files/1/0648/7883/8019/t/2/assets/gb-flag.svg?v=85559558288444710101655285928'
-                  />
-                  <div className='text-xs leading-none uppercase'>en/gb</div>
-                </div>
-                <div
-                  tabIndex={0}
-                  className='p-2 top-full py-4 flex flex-col shadow dropdown-content bg-base-100 rounded w-[240px] truncate'
-                >
-                  <a
-                    title='United Kingdom'
-                    href='/'
-                    className=' items-center !py-2 leading-none capitalize !flex justify-between !px-3 gap-2  hover:underline  font-bold focus-inset'
-                    aria-current='true'
-                    data-country='GB'
-                    data-lang
-                    data-value='GB'
-                  >
-                    United kingdom
-                    <img
-                      width={16}
-                      height={16}
-                      className='!pl-0 w-4 h-4 rounded-full object-cover'
-                      src='//cdn.shopify.com/s/files/1/0648/7883/8019/t/2/assets/gb-flag.svg?v=85559558288444710101655285928'
-                    />
-                  </a>
-                  <a
-                    title='Sweden'
-                    href='/sv-se/'
-                    className=' items-center !py-2 leading-none capitalize !flex justify-between !px-3 gap-2  hover:underline  focus-inset'
-                    data-country='SE'
-                    data-lang
-                    data-value='SE'
-                  >
-                    Sweden
-                    <img
-                      width={16}
-                      height={16}
-                      className='!pl-0 w-4 h-4 rounded-full object-cover'
-                      src='//cdn.shopify.com/s/files/1/0648/7883/8019/t/2/assets/se-flag.svg?v=96789575551074673461655285943'
-                    />
-                  </a>
-                  <a
-                    title='Germany'
-                    href='/de-de/'
-                    className=' items-center !py-2 leading-none capitalize !flex justify-between !px-3 gap-2  hover:underline  focus-inset'
-                    data-country='DE'
-                    data-lang
-                    data-value='DE'
-                  >
-                    Germany
-                    <img
-                      width={16}
-                      height={16}
-                      className='!pl-0 w-4 h-4 rounded-full object-cover'
-                      src='//cdn.shopify.com/s/files/1/0648/7883/8019/t/2/assets/de-flag.svg?v=149501777162787292311655285923'
-                    />
-                  </a>
-                  <a
-                    title='Norway'
-                    href='/no-no/'
-                    className=' items-center !py-2 leading-none capitalize !flex justify-between !px-3 gap-2  hover:underline  focus-inset'
-                    data-country='NO'
-                    data-lang
-                    data-value='NO'
-                  >
-                    Norway
-                    <img
-                      width={16}
-                      height={16}
-                      className='!pl-0 w-4 h-4 rounded-full object-cover'
-                      src='//cdn.shopify.com/s/files/1/0648/7883/8019/t/2/assets/no-flag.svg?v=119158971746191992151655285941'
-                    />
-                  </a>
-                  <a
-                    title='France'
-                    href='/fr-fr/'
-                    className=' items-center !py-2 leading-none capitalize !flex justify-between !px-3 gap-2  hover:underline  focus-inset'
-                    data-country='FR'
-                    data-lang
-                    data-value='FR'
-                  >
-                    France
-                    <img
-                      width={16}
-                      height={16}
-                      className='!pl-0 w-4 h-4 rounded-full object-cover'
-                      src='//cdn.shopify.com/s/files/1/0648/7883/8019/t/2/assets/fr-flag.svg?v=92797901736867105561655285927'
-                    />
-                  </a>
-                  <a
-                    title='Netherlands'
-                    href='/nl-nl/'
-                    className=' items-center !py-2 leading-none capitalize !flex justify-between !px-3 gap-2  hover:underline  focus-inset'
-                    data-country='NL'
-                    data-lang
-                    data-value='NL'
-                  >
-                    Netherlands
-                    <img
-                      width={16}
-                      height={16}
-                      className='!pl-0 w-4 h-4 rounded-full object-cover'
-                      src='//cdn.shopify.com/s/files/1/0648/7883/8019/t/2/assets/nl-flag.svg?v=158148342600437444421655285941'
-                    />
-                  </a>
-                  <a
-                    title='Belgium'
-                    href='/nl-be/'
-                    className=' items-center !py-2 leading-none capitalize !flex justify-between !px-3 gap-2  hover:underline  focus-inset'
-                    data-country='BE'
-                    data-lang
-                    data-value='BE'
-                  >
-                    Belgium (Dutch)
-                    <img
-                      width={16}
-                      height={16}
-                      className='!pl-0 w-4 h-4 rounded-full object-cover'
-                      src='//cdn.shopify.com/s/files/1/0648/7883/8019/t/2/assets/be-flag.svg?v=116003378325675406541655285920'
-                    />
-                  </a>
-                  <a
-                    title='Belgium'
-                    href='/fr-be/'
-                    className=' items-center !py-2 leading-none capitalize !flex justify-between !px-3 gap-2  hover:underline  focus-inset'
-                    data-country='BE'
-                    data-lang
-                    data-value='BE'
-                  >
-                    Belgium (French)
-                    <img
-                      width={16}
-                      height={16}
-                      className='!pl-0 w-4 h-4 rounded-full object-cover'
-                      src='//cdn.shopify.com/s/files/1/0648/7883/8019/t/2/assets/be-flag.svg?v=116003378325675406541655285920'
-                    />
-                  </a>
-                  <a
-                    title='Austria'
-                    href='/de-at/'
-                    className=' items-center !py-2 leading-none capitalize !flex justify-between !px-3 gap-2  hover:underline  focus-inset'
-                    data-country='AT'
-                    data-lang
-                    data-value='AT'
-                  >
-                    Austria (German)
-                    <img
-                      width={16}
-                      height={16}
-                      className='!pl-0 w-4 h-4 rounded-full object-cover'
-                      src='//cdn.shopify.com/s/files/1/0648/7883/8019/t/2/assets/at-flag.svg?v=27547665196861826961655285919'
-                    />
-                  </a>
-                  <a
-                    title='Spain'
-                    href='/es-es/'
-                    className=' items-center !py-2 leading-none capitalize !flex justify-between !px-3 gap-2  hover:underline  focus-inset'
-                    data-country='ES'
-                    data-lang
-                    data-value='ES'
-                  >
-                    Spain
-                    <img
-                      width={16}
-                      height={16}
-                      className='!pl-0 w-4 h-4 rounded-full object-cover'
-                      src='//cdn.shopify.com/s/files/1/0648/7883/8019/t/2/assets/es-flag.svg?v=23887639339118606941655285924'
-                    />
-                  </a>
-                </div>
-              </div>
+              <StoreSelector />
             </li>
           </ul>
           <div className='flex justify-end flex-1 lg:hidden '>
             {/* Shown on Mobile Only */}
             <ul className='flex items-center list-none'>
               <li className='px-2 seeks'>
-                <label
-                  id='search_trigger'
-                  className='m-0 js-search-trigger js-search-mobile-trigger'
-                >
+                <label className='m-0' htmlFor={searchBoxId}>
                   <i className='text-2xl icon icon-search' aria-hidden='true'>
                     <svg
                       stroke='currentColor'
@@ -725,15 +541,7 @@ export const Header = () => (
                 </a>
               </li>
               <li className='flex items-center ml-3 text-left'>
-                <label
-                  aria-label='Open navigation'
-                  className='px-0 text-left text-black'
-                  data-slideout-direction='right'
-                  data-wau-slideout-target='mobile-navigation'
-                  name='button'
-                  tabIndex={0}
-                  type='button'
-                >
+                <label className='px-0 text-left text-black' htmlFor={mobileMenuId}>
                   <i aria-hidden='true' className='text-2xl la la-bars'>
                     <svg
                       stroke='currentColor'
@@ -751,6 +559,7 @@ export const Header = () => (
                       <line x1={3} y1={18} x2={21} y2={18} />
                     </svg>
                   </i>
+                  <input className='hidden' type='checkbox' id={mobileMenuId} />
                 </label>
               </li>
             </ul>
@@ -778,25 +587,17 @@ export const Header = () => (
     <div className='drawer pointer-events-none lg:hidden absolute inset-0 top-[100px] w-screen  h-[calc(100vh-103px)]'>
       <input className='drawer-toggle' id='openMenuMobile' type='checkbox' />
       <div className='drawer-side '>
-        <label className='drawer-overlay' htmlFor='openMenuMobile' />
+        <label className='drawer-overlay' htmlFor={openMenuMobileId} />
         <div className='w-full pointer-events-auto absolute border-t inset-0 flex bg-white overflow-auto pb-[100px] h-full justify-center isolate '>
           <ul className='w-full list-none divide-y'>
-            <li
-              className='max-w-[1264px] w-full px-4 sm:px-8 mx-auto  
-
-'
-            >
+            <li className='max-w-[1264px] w-full px-4 sm:px-8 mx-auto   '>
               <div className=' collapse-title leading-[28px] group-focus:bg-transparent'>
                 <a className='uppercase ' href='/collections/chairs'>
                   Chairs
                 </a>
               </div>
             </li>
-            <li
-              className='max-w-[1264px] w-full px-4 sm:px-8 mx-auto  
-
-'
-            >
+            <li className='max-w-[1264px] w-full px-4 sm:px-8 mx-auto  '>
               <div className=' collapse-title leading-[28px] group-focus:bg-transparent'>
                 <a className='uppercase ' href='/collections/tables'>
                   {' '}
@@ -804,22 +605,14 @@ export const Header = () => (
                 </a>
               </div>
             </li>
-            <li
-              className='max-w-[1264px] w-full px-4 sm:px-8 mx-auto  
-
-'
-            >
+            <li className='max-w-[1264px] w-full px-4 sm:px-8 mx-auto '>
               <div className=' collapse-title leading-[28px] group-focus:bg-transparent'>
                 <a className='uppercase ' href='/collections/sofas'>
                   Sofa
                 </a>
               </div>
             </li>
-            <li
-              className='max-w-[1264px] w-full px-4 sm:px-8 mx-auto  
-
-'
-            >
+            <li className='max-w-[1264px] w-full px-4 sm:px-8 mx-auto  '>
               <div className=' collapse-title leading-[28px] group-focus:bg-transparent'>
                 <a className='uppercase ' href='/collections/lighting'>
                   {' '}
@@ -827,33 +620,21 @@ export const Header = () => (
                 </a>
               </div>
             </li>
-            <li
-              className='max-w-[1264px] w-full px-4 sm:px-8 mx-auto  
-
-'
-            >
+            <li className='max-w-[1264px] w-full px-4 sm:px-8 mx-auto   '>
               <div className=' collapse-title leading-[28px] group-focus:bg-transparent'>
                 <a className='uppercase ' href='/collections/storage'>
                   Storage
                 </a>
               </div>
             </li>
-            <li
-              className='max-w-[1264px] w-full px-4 sm:px-8 mx-auto  
-
-'
-            >
+            <li className='max-w-[1264px] w-full px-4 sm:px-8 mx-auto  '>
               <div className=' collapse-title leading-[28px] group-focus:bg-transparent'>
                 <a className='uppercase ' href='/collections/accessories'>
                   Accessories
                 </a>
               </div>
             </li>
-            <li
-              className='max-w-[1264px] w-full px-4 sm:px-8 mx-auto  
-
-'
-            >
+            <li className='max-w-[1264px] w-full px-4 sm:px-8 mx-auto   '>
               <div className=' collapse-title leading-[28px] group-focus:bg-transparent'>
                 <a className='uppercase ' href='/collections/express-delivery'>
                   Express Delivery

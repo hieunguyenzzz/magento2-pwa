@@ -1,3 +1,42 @@
+import classNames from 'classnames'
+import { Trans } from '../../lib/i18n/I18nProvider'
+import data from './Footer.data'
+import { Image } from './Image'
+
+const email = 'customersupport@mobelaris.com'
+const phone = '02081449316'
+const address = '85 Great Portland street, First Floor, London, W1W 7LT'
+const renderMenuBlock = (block, i) => {
+  const twoColumns = block?.menu?.items.length > 6
+  const peerId = `menu-item-${i}`
+  return (
+    <div
+      key={i}
+      className={classNames({
+        'w-full md:w-1/3 lg:w-1/4 lg:max-w-[200px] ': !twoColumns,
+        'md:w-2/3 lg:w-1/2 lg:max-w-[440px]': twoColumns,
+      })}
+    >
+      <label className='col-span-full' htmlFor={peerId}>
+        <h4 className='text-left uppercase '>
+          <Trans id={block.settings.menu_heading} />
+        </h4>
+      </label>
+      <input id={peerId} type='checkbox' className='hidden peer' />
+      <div className='hidden max-h-0 lg:max-h-[unset] peer-checked:h-auto peer-checked:max-h-[100vh]  transition-all pb-6 footer-block-content animate__animated animate__fadeIn lg:animate-none peer-checked:block lg:block'>
+        <ul className={classNames('list-none', twoColumns && 'grid grid-cols-2')}>
+          {block?.menu?.items.map((item) => (
+            <li key={item.subject} className='pt-3 pr-3 leading-snug '>
+              <a className='text-base ' href={`${item.subject}`}>
+                <Trans id={item.title} />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  )
+}
 export const Footer = () => (
   <footer
     className='py-16 pb-32 footer-section lg:pb-16'
@@ -5,19 +44,16 @@ export const Footer = () => (
     data-section-type='footer-section'
   >
     <div className='max-w-[1264px] w-full px-4 sm:px-8 mx-auto  flex flex-col gap-12'>
-      <a href className='w-full'>
-        <img
+      <a href='#' className='w-full'>
+        <Image
           className='w-[200px]'
           src='//cdn.shopify.com/s/files/1/0648/7883/8019/files/LOGO-MOBELARIS_Final_1_copy.png?v=1655967119&width=240'
-          alt
         />
       </a>
       <div className='flex flex-col gap-12 lg:flex-row'>
         <div className='flex flex-col gap-6 lg:max-w-md'>
           <div>
-            Hand Made Style Designer Furniture from around the world come together at Mobelaris,
-            bringing you a vast range of designer furniture, lighting and accessories at a fraction
-            of the high street price.
+            <Trans id='current.sections.footer.settings.description' />
           </div>
           <div className='flex justify-start '>
             <ul id='social-icons'>
@@ -45,24 +81,30 @@ export const Footer = () => (
           </div>
           <div className='space-y-2'>
             <div>
-              <span className='mr-3 opacity-70'>Address: </span>
+              <span className='mr-3 opacity-70'>
+                <Trans id='others.strings.general.address' />:{' '}
+              </span>
               <a
                 target='_blank'
-                href='https://www.google.com/search?q=85 Great Portland street, First Floor, London, W1W 7LT'
+                href={`https://www.google.com/search?q=${address}`}
                 rel='noreferrer'
               >
-                85 Great Portland street, First Floor, London, W1W 7LT
+                {address}
               </a>
             </div>
             <div>
-              <span className='mr-3 opacity-70'>Contact Us: </span>
-              <a href='tel:02081449316' target='_blank' title='tel:02081449316' rel='noreferrer'>
-                02081449316
+              <span className='mr-3 opacity-70'>
+                <Trans id='others.strings.general.contact_us' />:{' '}
+              </span>
+              <a href='tel:02081449316' target='_blank' title={`tel:${phone}`} rel='noreferrer'>
+                {phone}
               </a>
             </div>
             <div>
-              <span className='mr-3 opacity-70'>Email: </span>
-              <a href='mailto:customersupport@mobelaris.com'>customersupport@mobelaris.com</a>
+              <span className='mr-3 opacity-70'>
+                <Trans id='others.strings.general.email' />:{' '}
+              </span>
+              <a href='mailto:customersupport@mobelaris.com'>{email}</a>
             </div>
           </div>
         </div>
@@ -70,156 +112,7 @@ export const Footer = () => (
           className='flex flex-col flex-wrap justify-start flex-1 gap-3 xl:flex-nowrap md:flex-row lg:gap-6'
           id='footer'
         >
-          <div
-            className='w-full  
-          md:w-1/3 lg:w-1/4 lg:max-w-[200px]
-         footer-menu'
-          >
-            <label className='togglecontent col-span-full ' htmlFor='menu-item-1'>
-              <h4 className='text-left uppercase '>CATEGORIES</h4>
-            </label>
-            <input id='menu-item-1' type='checkbox' />
-            <div className='footer-block-content'>
-              <ul className='list-none '>
-                <li>
-                  <a href='/collections/chairs' title>
-                    Chairs
-                  </a>
-                </li>
-                <li>
-                  <a href='/collections/sofas' title>
-                    Sofas
-                  </a>
-                </li>
-                <li>
-                  <a href='/collections/lighting' title>
-                    Lighting
-                  </a>
-                </li>
-                <li>
-                  <a href='/collections/tables' title>
-                    Tables
-                  </a>
-                </li>
-                <li>
-                  <a href='/collections/accessories' title>
-                    Accessories
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <style
-            dangerouslySetInnerHTML={{
-              __html:
-                '\n                input#menu-item-1 {\n                    display: none;\n                    position: relative;\n                }\n\n                @media screen and (max-width: 740px) {\n                    .footer-block-content {\n                        display: none;\n                    }\n\n                    #menu-item-1:checked~.footer-block-content,\n                    #footer .footer-index-4 .footer-block-content {\n                        display: block !important;\n                        visibility: visible !important;\n                        opacity: 1 !important;\n                    }\n            ',
-            }}
-          />
-          <div
-            className='w-full  
-          md:w-2/3 lg:w-1/2 lg:max-w-[440px]   
-           footer-menu'
-          >
-            <label className='togglecontent col-span-full ' htmlFor='menu-item-2'>
-              <h4 className='text-left uppercase '>INFORMATION</h4>
-            </label>
-            <input id='menu-item-2' type='checkbox' />
-            <div className='footer-block-content'>
-              <ul className='grid grid-cols-2 list-none '>
-                <li>
-                  <a href='/pages/about-us' title>
-                    About us
-                  </a>
-                </li>
-                <li>
-                  <a href='/pages/covid-19-faq' title>
-                    Covid-19 FAQ
-                  </a>
-                </li>
-                <li>
-                  <a href='/pages/contact' title>
-                    Contact us
-                  </a>
-                </li>
-                <li>
-                  <a href='/pages/terms-conditions' title>
-                    Terms &amp; Conditions
-                  </a>
-                </li>
-                <li>
-                  <a href='/pages/privacy-policy' title>
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href='/pages/return-refunds' title>
-                    Return &amp; Refunds
-                  </a>
-                </li>
-                <li>
-                  <a href='/pages/trade' title>
-                    Trade
-                  </a>
-                </li>
-                <li>
-                  <a href='/blogs/faq/the-big-brexit-questions' title>
-                    Brexit
-                  </a>
-                </li>
-                <li>
-                  <a href='/pages/faqs' title>
-                    Faqs
-                  </a>
-                </li>
-                <li>
-                  <a href='/pages/transparency-policy' title>
-                    Transparency Policy
-                  </a>
-                </li>
-                <li>
-                  <a href='/pages/ethical-trading-policy' title>
-                    Ethical Trading
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <style
-            dangerouslySetInnerHTML={{
-              __html:
-                '\n                input#menu-item-2 {\n                    display: none;\n                    position: relative;\n                }\n\n                @media screen and (max-width: 740px) {\n                    .footer-block-content {\n                        display: none;\n                    }\n\n                    #menu-item-2:checked~.footer-block-content,\n                    #footer .footer-index-4 .footer-block-content {\n                        display: block !important;\n                        visibility: visible !important;\n                        opacity: 1 !important;\n                    }\n            ',
-            }}
-          />
-          <div
-            className='w-full  
-          md:w-1/3 lg:w-1/4 lg:max-w-[200px]
-         footer-menu'
-          >
-            <label className='togglecontent col-span-full ' htmlFor='menu-item-3'>
-              <h4 className='text-left uppercase '>ACCOUNT</h4>
-            </label>
-            <input id='menu-item-3' type='checkbox' />
-            <div className='footer-block-content'>
-              <ul className='list-none '>
-                <li>
-                  <a href='/account' title>
-                    My account
-                  </a>
-                </li>
-                <li>
-                  <a href='/pages/order-tracking' title>
-                    Order tracking
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <style
-            dangerouslySetInnerHTML={{
-              __html:
-                '\n                input#menu-item-3 {\n                    display: none;\n                    position: relative;\n                }\n\n                @media screen and (max-width: 740px) {\n                    .footer-block-content {\n                        display: none;\n                    }\n\n                    #menu-item-3:checked~.footer-block-content,\n                    #footer .footer-index-4 .footer-block-content {\n                        display: block !important;\n                        visibility: visible !important;\n                        opacity: 1 !important;\n                    }\n            ',
-            }}
-          />
+          {data.blocks.map(renderMenuBlock)}
         </div>
       </div>
       <div
