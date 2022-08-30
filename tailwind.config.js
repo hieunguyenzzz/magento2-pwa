@@ -1,6 +1,5 @@
 module.exports = {
   prefix: '',
-  important: true,
   future: {
     purgeLayersByDefault: true,
     applyComplexClasses: true,
@@ -14,7 +13,7 @@ module.exports = {
         sale: '#dc9d2d',
       },
       fontFamily: {
-        body: ['var(--font-heading)'],
+        body: ['var(--font-body)'],
         heading: ['var(--font-heading)'],
         button: ['var(--font-button)'],
       },

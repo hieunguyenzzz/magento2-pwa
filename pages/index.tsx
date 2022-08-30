@@ -1,17 +1,22 @@
-import { StoreConfigDocument } from '@graphcommerce/magento-store'
 import { Home } from '../components'
-import { graphqlSharedClient } from '../lib/graphql/graphqlSsrClient'
+import { HomeDocument } from '../components/home.gql'
+import { GlobalDocument } from '../graphql/Global.gql'
+import { graphqlSharedClient, graphqlSsrClient } from '../lib/graphql/graphqlSsrClient'
 
 export default Home
 
 export const getStaticProps = async ({ locale }: { locale: string }) => {
   const client = graphqlSharedClient(locale)
+  const staticClient = graphqlSsrClient(locale)
 
-  const conf = client.query({ query: StoreConfigDocument })
-
+  const global = client.query({ query: GlobalDocument })
+  const homePage = staticClient.query({
+    query: HomeDocument,
+  })
   return {
     props: {
-      apolloState: await conf.then(() => client.cache.extract()),
+      home: (await homePage).data,
+      apolloState: await global.then(() => client.cache.extract()),
     },
     revalidate: 60 * 20,
   }

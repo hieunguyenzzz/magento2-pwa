@@ -1,4 +1,4 @@
-import { createContext, useMemo } from 'react'
+import { createContext, useCallback, useContext, useMemo } from 'react'
 
 const translationContext = createContext({
   locale: 'en',
@@ -9,6 +9,10 @@ export const Trans = ({ id }: { id: string }) => (
     {({ translations }) => translations[id] || id}
   </translationContext.Consumer>
 )
+export const useTrans = () => {
+  const { translations } = useContext(translationContext)
+  return useCallback((id) => translations[id], [translations])
+}
 export function I18nProvider({ locale, children }) {
   return (
     <translationContext.Provider

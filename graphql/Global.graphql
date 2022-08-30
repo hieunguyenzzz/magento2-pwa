@@ -1,0 +1,16 @@
+query Global {
+  storeConfig {
+    ...StoreConfigFragment
+  }
+  categories(filters: { ids: { in: ["2"] } }) {
+    items {
+      uid
+      children_count
+      ...CategoryBreadcrumb
+      ...CategoryDescription
+      ...CategoryChildren
+      ...CategoryMeta
+      ...CategoryHeroNav
+    }
+  }
+}
